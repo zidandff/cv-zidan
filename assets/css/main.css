@@ -72,9 +72,9 @@ html {
     width: 26px;
     margin-right: 8px;
 }
-.contact-content a {
-    color: #FFFFFF;
-    text-decoration: none;
+.contact-content .contact-icon a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
 }
 /* KEAHLIAN */
 .keahlian {
