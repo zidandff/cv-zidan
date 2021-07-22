@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+/* ==== LAYOUT ==== */
+.cv-container {
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin: 50px auto;
+    display: flex;
+    box-shadow: 0 20px 60px  rgba(0, 0, 0, 0.3);
+}
+.section-wrapper {
+    margin-bottom: 50px;
+}
+.section-wrapper h2 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.section-wrapper p {
+    font-size: 14px;
+}
+.cv-left {
+    width: calc(100% / 3);
+    background-color: #131212;
+    padding: 50px 24px;
+    color: #FFFFFF;
+}
+.cv-right {
+    width: calc(100% * 2 / 3);
+    background-color: #FFFFFF;
+    padding: 50px 24px;
+}
+
+/* PROFILE SECTION */
+.cv-left img {
+    width: 100%;
+}
+.cv-header {
+    margin-bottom: 70px;
+}
+.cv-header h1 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    margin-top: 30px;
+}
+.cv-header h1 span {
+    font-weight: normal;
+}
+.cv-header p {
+    color: #c4c4c4;
+    padding: 8px 0;
+}
+.profile p {
+    line-height: 170%;
+}
+/* CONTACT SECTION */
+.contact {
+    margin-bottom: 50px;
+}
+.contact-content {
+    display: flex;
+    margin: 16px 0;
+    align-items: flex-start;
+}
+.contact-icon {
+    width: 26px;
+    margin-right: 8px;
+}
+
+/* KEAHLIAN */
+.keahlian {
+    display: flex;
+    justify-content: space-between;
+}
+.chart {
+    width: 70%;
+    padding-left: 40px;
+}
+.chart canvas {
+    width: 100%;
+}
+.list-keahlian ul {
+    padding-left: 1.4rem;
+    list-style: square;
+}
+.list-keahlian ul li {
+    margin: 8px 0;
+}
+
+/* PENDIDIKAN */
+.pendidikan-item {
+    padding: 0 0 30px 20px;
+    position: relative;
+}
+.pendidikan-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background-color: #131212;
+}
+.pendidikan-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    display: block;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #131212;
+}
+.pendidikan-item h3 {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.pendidikan-item .date {
+    display: block;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #888888;
+}
+/* PROJEK */
+.project-item {
+    display: flex;
+    margin: 25px 0;
+}
+.project-thumb {
+    width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+.project-desc {
+    padding-left: 12px;
+}
+.project-desc h3 {
+    margin-bottom: 10px;
+}
+.project-desc p {
+    margin-bottom: 25px;
+}
+.link-project {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+@media (max-width: 992px){
+    .cv-container {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .cv-left {
+        width: 100%;
+    }
+    .cv-right {
+        width: 100%;
+    }
+    .cv-left img {
+        width: 200px;
+    }
+    .cv-header {
+        text-align: center;
+        margin: 0 auto 70px;
+    }
+    .chart {
+        padding-left: 80px;
+    }
+}
+
+@media(max-width: 768px){
+    .keahlian {
+        flex-direction: column;
+    }
+    .chart {
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .section-wrapper {
+        margin-bottom: 80px;
+    }
+}
