@@ -72,7 +72,10 @@ html {
     width: 26px;
     margin-right: 8px;
 }
-
+.contact-content a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 /* KEAHLIAN */
 .keahlian {
     display: flex;
